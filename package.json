@@ -1,7 +1,17 @@
 {
   "name": "jrm-next-template",
+  "author": "JEREMY",
+  "description": "A template for creating a production-ready fullstack Next.js application (Maybe...)",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/pp3times/scalable-nextjs-template",
+  "engines": {
+    "node": ">=18.18.0",
+    "yarn": "please-use-pnpm",
+    "npm": "please-use-pnpm",
+    "pnpm": ">=8.7.6"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
