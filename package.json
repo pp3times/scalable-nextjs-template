@@ -13,13 +13,16 @@
   },
   "license": "MIT",
   "scripts": {
+    "postinstall": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "prepare": "husky install",
-    "prettier": "prettier --write .",
-    "format": "pnpm prettier && pnpm lint --fix"
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:fix": "pnpm prettier && pnpm lint --fix"
   },
   "dependencies": {
     "eslint-config-prettier": "^9.0.0",
@@ -36,6 +39,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "husky": "^8.0.3",
@@ -43,5 +47,19 @@
     "prettier": "^3.0.3",
     "tailwindcss": "latest",
     "typescript": "latest"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "lint --fix",
+      "prettier --config ./.prettierrc --write"
+    ],
+    "**/*.{css,scss,md,html,json}": [
+      "prettier --config ./.prettierrc --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
