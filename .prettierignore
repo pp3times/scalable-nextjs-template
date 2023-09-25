@@ -6,3 +6,7 @@ pnpm-lock.yaml
 public/
 .gitignore
 .husky/
+.env
+.env.production
+.env*.local
+.env.example
