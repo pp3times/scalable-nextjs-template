@@ -24,3 +24,19 @@
 ## The Standard Rule linting
 
 Here are its [rules](https://standardjs.com/rules.html) and [config](https://standardjs.com/index.html#can-i-use-a-custom-style-guide).
+
+## Used Technologies
+
+- [NextJS](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind CSS Debug Screens](https://github.com/jorenvanhee/tailwindcss-debug-screens)
+- [TypeScript](https://www.typescriptlang.org/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Husky](https://typicode.github.io/husky/#/)
+- [lint-staged](https://github.com/okonet/lint-staged)
+- [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog)
+- [commitlint](https://commitlint.js.org/#/guides-local-setup)
+- [pnpm](https://pnpm.io/)
+- [Commit Message Convention](#commit-message-convention-cz-conventional-changelog-adapter)
+- [The Standard Rule linting](#the-standard-rule-linting)
